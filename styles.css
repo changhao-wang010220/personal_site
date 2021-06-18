@@ -347,7 +347,6 @@ header {
 .aboutContainer{
   padding: 5rem;
   display: grid;
-  place-items: center;
   text-align: center;
   overflow: hidden;
 }
