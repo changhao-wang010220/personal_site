@@ -363,6 +363,7 @@ header {
 #contact {
   min-height: 40rem;
   display: grid;
+  justify-content: center;
   text-align: center;
   overflow: hidden;
 }
