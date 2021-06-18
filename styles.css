@@ -361,7 +361,11 @@ header {
 #projects,
 #experiences,
 #contact {
-  height: 40rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  overflow: hidden;
 }
 footer {
   background: var(--clr-grey-1);
