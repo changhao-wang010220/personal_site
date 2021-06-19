@@ -199,7 +199,7 @@ nav {
   box-shadow: var(--light-shadow);
 }
 .fixed-nav .links a {
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-5);
 }
 .fixed-nav .links a:hover {
   color: var(--clr-grey-1);
