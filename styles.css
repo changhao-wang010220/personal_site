@@ -115,7 +115,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -174,16 +174,6 @@ p {
   padding-top: 1rem;
 }
 
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
 main {
   min-height: 100vh;
   display: grid;
@@ -233,9 +223,6 @@ nav {
 .nav-toggle:hover {
   color: var(--clr-secondary);
 }
-.avatar {
-  border-radius: 50%;
-}
 
 .links-container {
   height: 0;
@@ -258,7 +245,7 @@ nav {
   background-color: var(--clr-secondary);
   color: var(--clr-grey-1);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   nav {
     background: transparent;
   }
@@ -311,10 +298,12 @@ header {
   overflow: hidden;
 }
 .container h1 {
+  padding: 1.5rem;
   color: var(--clr-white);
   text-transform: uppercase;
 }
 .container p {
+  padding: 1.5rem;
   color: var(--clr-white);
   max-width: 25rem;
   margin: 0 auto;
@@ -323,10 +312,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .container p {
+    padding: 1.5rem;
     max-width: 40rem;
   }
 }
 /* sections and title */
+.title {
+  padding: 1rem;
+}
 .title h2 {
   text-align: center;
   text-transform: uppercase;
@@ -334,18 +327,28 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-
-.avatarContainer img {
-  color: var(--clr-white);
-  max-width: 20rem;
-  margin: 0 auto;
-  margin-bottom: 1.25rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 25rem;
+  padding: 1rem;
+}
+.avatarContainer {
+  display: flex;
+  justify-content: center;
 }
 
+#about,
+#projects,
+#experiences,
+#contact {
+  min-height: 80vh;
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  overflow: hidden;
+}
 .aboutContainer{
-  padding: 5rem;
   display: grid;
   place-items: center;
   text-align: center;
@@ -353,20 +356,22 @@ header {
 }
 
 .intro {
-  max-width: 40rem;
-  flex-basis: 2;
+  padding: 1rem;
+  max-width: 25rem;
+  border-radius: 10px;
+  padding: auto;
+}
+@media screen and (min-width: 768px) {
+  .aboutContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .intro {
+    max-width: 35rem;
+  }
 }
 
-#about,
-#projects,
-#experiences,
-#contact {
-  min-height: 40rem;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  overflow: hidden;
-}
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
@@ -377,15 +382,6 @@ footer p {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .aboutContainer{
-    padding: 5rem;
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-  }
 }
 
 .top-link {
