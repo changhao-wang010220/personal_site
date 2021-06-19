@@ -202,7 +202,7 @@ nav {
   color: var(--clr-grey-1);
 }
 .fixed-nav .links a:hover {
-  color: var(--clr-secondary);
+  color: var(--clr-grey-1);
 }
 /* .fixed-nav .links-container {
   height: auto !important;
