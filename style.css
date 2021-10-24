@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* nav */
+@media (max-width: 991px) {
+    .bg-small-nav {
+        background: #f8f9fa;
+    }
+    .bg-small-nav .navbar-brand {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .bg-small-nav .navbar-brand:hover, .bg-small-nav .navbar-brand:focus {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .bg-small-nav .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.55);
+    }
+    .bg-small-nav .navbar-nav .nav-link:hover, .bg-small-nav .navbar-nav .nav-link:focus {
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .bg-small-nav .navbar-nav .nav-link.disabled {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .bg-small-nav .navbar-nav .show > .nav-link,
+    .bg-small-navt .navbar-nav .nav-link.active {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .bg-small-nav .navbar-toggler {
+        color: rgba(0, 0, 0, 0.55);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+    .bg-small-nav .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .bg-small-nav .navbar-text {
+        color: rgba(0, 0, 0, 0.55);
+    }
+    .bg-small-nav .navbar-text a,
+    .bg-small-nav .navbar-text a:hover,
+    .bg-small-nav .navbar-text a:focus {
+        color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+/* banner */
+.bg-banner {
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+      url(bg.jpg) center/cover no-repeat;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 4rem;
+}
+
+/* About */
+.text-title {
+    color: rgb(63, 208, 212);
+}
+
+/* exp */
+#exp {
+    min-height: 70vh;
+}
+/* project */
+#project-items {
+    min-height: 70vh;
+}
+
+.project-des {
+    min-height: 30vh;
+}
+
+.bg-card-primary {
+    background:rgb(63, 208, 212);
+}
+
+/* arrow up */
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: rgb(63, 208, 212);
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    animation: bounce 2s ease-in-out infinite;
+    text-decoration: none;
+  
+    visibility: hidden;
+    z-index: -1;
+}
+
+#arrow-up-link :hover{
+    color: white;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 1;
+}
+  
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+/* footer */
+.connection-link i{
+    font-size: 3rem;
+    background-color: transparent;
+    color: white;
+}
+#connection-links i:hover{
+    color: rgb(63, 208, 212);
+}

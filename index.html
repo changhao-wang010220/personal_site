@@ -1,104 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChanghaoWang</title>
-    <script src="https://kit.fontawesome.com/1243fe830d.js" crossorigin="anonymous"></script>
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header id="home">
-      <!-- navbar -->
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="nav-header">
-            <div>Changhao Wang</div>
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          <!-- links -->
-          <div class="links-container">
-            <ul class="links">
-              <li>
-                <a href="#home" class="scroll-link">home</a>
-              </li>
-              <li>
-                <a href="#about" class="scroll-link">about</a>
-              </li>
-              <li>
-                <a href="#projects" class="scroll-link">projects</a>
-              </li>
-              <li>
-                <a href="#experiences" class="scroll-link">experiences</a>
-              </li>
-              <li>
-                <a href="#contact" class="scroll-link">contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- banner -->
-      <div class="banner">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Changhao Wang</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top bg-small-nav" id="navbar">
         <div class="container">
-          <h1>Changhao Wang</h1>
-          <p>
-            A University of Toronto computer science student
-          </p>
-          <a href="#about" class="scroll-link btn btn-white">know more about me</a>
+            <a href="#" class="navbar-brand">C W</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#banner" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#exp" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </header>
-    <!-- about -->
-    <section id="about" class="section">
-        <div class="title">
-            <h2>about <span>me</span></h2>
-        </div>
-        <div class="aboutContainer">
-            <div class="avatarContainer">
-                <img src="avatar.jpg" class="avatar" alt="avatar" />
-            </div> 
-            <p class="intro">
-                I am a computer science co-op student studying in University of Toronto. I have many experiences in software development using 
-                different computer languages such as Java, Python, C, Javascript, HTML5, CSS3. In school, I finished couple computer science
-                related side-projects such as a gpa calculator...
+    </nav>
+
+    <!-- banner -->
+    <section id="banner" class="bg-banner text-light p-5 p-lg-0 pt-lg-5 text-center test-sm-start">
+        <div class="container">
+            <h1 class="name fw-bold mb-4">Changhao Wang</h1>
+            <p class="mt-3 mb-5">
+                University of Toronto software engineering specialist
             </p>
+            <a href="#about" class="btn btn-light col-3 mt-5">know more about me</a>
         </div>
-        
     </section>
-    <!-- projects -->
-    <section id="projects" class="section">
-      <div class="title">
-        <h2>previous <span>projects</span></h2>
-      </div>
-    </section>
-    <!-- experiences -->
-    <section id="experiences" class="section">
-      <div class="title">
-        <h2>my <span>experiences</span></h2>
-      </div>
-    </section>
-    <!-- contact -->
-    <section id="contact" class="section">
-        <div class="title">
-          <h2>contact <span>me</span></h2>
+
+    <!-- About -->
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center test-sm-start" id="about">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>
+                        About <span class="text-title">Me</span>
+                    </h1>
+                    <p class="lead my-4">
+                        I’m a 2nd year student study at University of Toronto specializing in software engineering stream. 
+                        Currently I have one part time job, which is a computer science tutor, 
+                        and I’m also the event director of AMACSS - The Association of Mathematical and Computer Science Students in UTSC. 
+                        Besides that, I attend some hackathons before, also finished a couple of side projects such as an Android app, 
+                        my personal website, and a GitHub-user-search website. 
+                    </p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block p-3" src="pic.jpg" alt="pic">
+            </div>
         </div>
-      </section>
+    </section>
+
+    <!-- exp -->
+    <section class="p-5 bg-light p-5 p-lg-0 pt-lg-5" id="exp">
+        <div class="container">
+            <div class="container">
+                <h1 class="text-center text-dark">My <span class="text-title">Experience</span></h1>
+            </div>
+            <div class="card mt-5">
+                <div class="card-header">
+                    Part-time
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Computer Science Tutor</h5>
+                    <p class="card-text">
+                        I worked as a part-time tutor for computer courses in Lumist from May 2021. 
+                        I mainly explain basic computer basics to first year students and teach them the basic usage of Python, Java and C.
+                        And through my teaching and explanation, their GPA has been improved by at least 15%.
+                    </p>
+                    <a href="#" class="btn btn-dark">Check Lumist</a>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <div class="card-header">
+                    Club
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">AMACSS Event Director</h5>
+                    <p class="card-text">
+                        As the Event Director of AMACSS (The Association of Mathematical and Computer Science Students), 
+                        I organized several ice-breaking activities for Computer Science and Math students, 
+                        and let them have the opportunity to get to know each other and become friends. 
+                        And to provide a place for students of this major to communicate and learn from each other.
+                    </p>
+                    <a href="#" class="btn btn-dark">Check AMACSS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- porject -->
+    <section class="p-5 bg-light" id="project">
+        <div class="container">
+            <div class="container">
+                <h1 class="text-center text-dark">My <span class="text-title">Project</span></h1>
+            </div>
+            <p class="lead text-center text-dark mb-5">
+                Here is some site projects I made. 
+            </p>
+            <div class="row text-center g-4 align-items-center" id="project-items">
+                <div class="col-md">
+                    <div class="card bg-card-primary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                My personal website
+                            </h3>
+                            <p class="card-text project-des">
+                                Building the layout by HTML, CSS and bootstrap 5 and making the scroll animation by JavaScript.
+                            </p>
+                            <a href="https://changhao-wang010220.github.io/personal_site/" class="btn btn-light">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Github-user-reach website
+                            </h3>
+                            <p class="card-text project-des">
+                                Using React to build the website that allows user to search GitHub users by name, by project, etc. 
+                                Using Axiom to deal with GET and POST api request. Using Bootstrap to design UI.
+                            </p>
+                            <a href="" class="btn btn-dark">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md">
+                    <div class="card bg-card-primary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Health plan app
+                            </h3>
+                            <p class="card-text project-des">
+                                In a group of 4, using Agile standard to make a health plan app that allows patients to book appointment with doctors and let doctors see their schedule and patient. 
+                                Using OOP to create a proper data structure and stored in firebase. UI designed using Material design
+                            </p>
+                            <a href="" class="btn btn-light">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- footer -->
-    <footer class="section">
-      <p>
-        copyright &copy; Changhao Wang
-        <span id="date"></span>. all rights reserved
-      </p>
+    <footer class="bg-dark pt-5 pb-3" id="contact">
+        <div class="row">
+            <p class="text-muted copyright text-center mt-3">
+                Feel free to contact me via:
+            </p>
+            <div class="col col-lg-7 col-md-10 mx-auto">
+                <ul class="d-flex justify-content-center list-unstyled" id="connection-links">
+                    <li class="connection-link mx-3 rounded-circle">
+                        <a href="mailto: abc@example.com"><i class="bi bi-envelope"></i></i></a>
+                    </li>
+                    <li class="connection-link mx-3">
+                        <a href="https://twitter.com"><i class="bi bi-linkedin"></i></i></a>
+                    </li>
+                    <li class="connection-link mx-3">
+                        <a href="https://github.com/"><i class="bi bi-github"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
-    <a class="scroll-link top-link" href="#home">
-      <i class="fas fa-arrow-up"></i>
-    </a>
+
+    <!-- arrow go top -->
+    <div id="arrow-up-link">
+        <a class="scroll-link top-link" href="#">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+    
     <!-- javascript -->
-    <script src="code.js"></script>
-  </body>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="movement.js"></script>
+</body>
 </html>
